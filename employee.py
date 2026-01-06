@@ -26,7 +26,7 @@ def main():
     print(f"Name       : {name}")
     print(f"ID         : {emp_id}")
     print(f"Department : {department}")
-    print(f"Salary     : ₹{salary}")
+    print(f"Salary     : {salary}")
     print(f"Grade      : {grade}")
 
 
