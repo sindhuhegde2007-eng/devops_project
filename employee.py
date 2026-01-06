@@ -1,3 +1,5 @@
+import sys
+
 def get_salary_grade(salary):
     if salary >= 80000:
         return "Grade A"
@@ -12,10 +14,11 @@ def get_salary_grade(salary):
 
 
 def main():
-    name = input("Enter Employee Name: ")
-    emp_id = input("Enter Employee ID: ")
-    department = input("Enter Department: ")
-    salary = float(input("Enter Monthly Salary: "))
+    # Command line arguments
+    name = sys.argv[1]
+    emp_id = sys.argv[2]
+    department = sys.argv[3]
+    salary = float(sys.argv[4])
 
     grade = get_salary_grade(salary)
 
